@@ -55,14 +55,9 @@
                     </a>
                 </li>
 
-                <li class="menu-title mt-2">Apps</li>
+                <li class="menu-title mt-2">Menu</li>
 
-                <li>
-                    <a href="apps-calendar.html">
-                        <i class="mdi mdi-calendar"></i>
-                        <span> Calendar </span>
-                    </a>
-                </li>
+                
 
                 <li>
                     <a href="apps-chat.html">
@@ -74,16 +69,54 @@
                 <li>
                     <a href="#sidebarEcommerce" data-bs-toggle="collapse">
                         <i class="mdi mdi-cart-outline"></i>
-                        <span> Ecommerce </span>
+                        <span> Category </span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarEcommerce">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="ecommerce-dashboard.html">Dashboard</a>
+                                <a href="{{ route('all.category') }}">All Category</a>
                             </li>
                             <li>
-                                <a href="ecommerce-products.html">Products</a>
+                                <a href="{{ route('add.category') }}">Add Category</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#sidebarEcommerce" data-bs-toggle="collapse">
+                        <i class="mdi mdi-cart-outline"></i>
+                        <span> Sub Category </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarEcommerce">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{{ route('all.subcategory') }}">All Sub Category</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('add.subcategory') }}">Add Sub Category</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#newspost" data-bs-toggle="collapse">
+                        <i class="mdi mdi-cart-outline"></i>
+                        <span> News Post Setting </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="newspost">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{{ route('all.news.post') }}">All News Post</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('add.news.post') }}">Add News Post</a>
                             </li>
                             
                         </ul>

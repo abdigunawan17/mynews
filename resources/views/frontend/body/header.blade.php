@@ -55,7 +55,9 @@ img.emoji {
  
 <div class="main_website">
 
-
+@php
+	$cdate = new DateTime();
+@endphp
 
 <header class="themesbazar_header">
 <div class="container">
@@ -63,7 +65,7 @@ img.emoji {
 <div class="col-lg-4 col-md-4">
 <div class="date">
 <i class="lar la-calendar"></i>
- Dhaka, Saturday, 10th September 2022
+  {{ $cdate->format('l d-m-Y') }}
 </div>
 </div>
 <div class="col-lg-4 col-md-4">
